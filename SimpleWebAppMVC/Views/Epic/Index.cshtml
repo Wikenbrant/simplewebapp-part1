@@ -1,0 +1,33 @@
+﻿@model List<SimpleWebAppMVC.Models.Epic>
+@{
+    ViewData["title"] = "About";
+}
+
+<h2>@ViewData["title"]</h2>
+
+<div class="jumbotron">
+    <h3>Tjabba tjena hallå från Index</h3>
+    <br />
+    <ul>
+        @foreach (var epic in @Model)
+        {
+            <li>@epic.Title</li>
+            <li>Date: @epic.Date</li>
+
+            @foreach (var story in epic.Stories)
+            {
+                <li>Description @story.Description</li>
+                <li>Date: @story.Date</li>
+                @foreach (var task in @story.Tasks)
+                {
+                    <li>*Task*</li>
+                    <li>@task.Title</li>
+                    <li>@task.Description</li>
+                    <li>@task.Date</li>
+                    <li>@task.Status</li>
+                    <li>@task.StatusCodes</li>
+                }
+            }
+        }
+    </ul>
+</div>
