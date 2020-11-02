@@ -1,0 +1,22 @@
+﻿form {
+    display: inline-block;
+    margin-top: 10px;
+    min-width: 325px;
+}
+
+textarea {
+    color: black;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.action-button {
+    margin-top: 10px;
+    min-width: 325px;
+}
+
+.message {
+    color: lime;
+}
