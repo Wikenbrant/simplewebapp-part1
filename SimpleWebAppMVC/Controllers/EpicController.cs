@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -24,7 +24,6 @@ namespace SimpleWebAppMVC.Controllers
             ViewBag.TitleSortParm = (sort == "Title" ? "Title_desc" : "Title");
             ViewBag.DescriptionSortParm = (sort == "Description" ? "Description_desc" : "Description");
             ViewBag.DateSortParm = (sort == "Date" ? "Date_desc" : "Date");
-            ViewBag.StatusSortParm = (sort == "Status" ? "Status_desc" : "Status");
 
             ViewData["sortJSON"] = sort;
 
