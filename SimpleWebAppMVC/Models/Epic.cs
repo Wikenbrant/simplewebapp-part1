@@ -10,5 +10,6 @@ namespace SimpleWebAppMVC.Models
         public string Title { get; set; }
         public DateTime Date { get; set; }
         public IEnumerable<Story> Stories { get; set; }
+        public DateTime? Birthday { get; set; }
     }
 }

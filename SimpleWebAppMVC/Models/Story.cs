@@ -11,5 +11,7 @@ namespace SimpleWebAppMVC.Models
         public DateTime Date { get; set; }
 
         public IEnumerable<Task> Tasks { get; set; }
+        public DateTime? Birthday { get; set; }
+
     }
 }

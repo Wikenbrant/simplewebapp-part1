@@ -10,6 +10,7 @@ namespace SimpleWebAppMVC
     public class Program
     {
         /**
+         * meow
          * Builds the web host using the specified arguments and Startup class.
          * @param args Arguments
          */

@@ -11,6 +11,7 @@ namespace SimpleWebAppMVC.Controllers
 {
     public class EpicController : Controller
     {
+        private readonly string important;
         private readonly AppDbContext dbContext;
 
         public EpicController(AppDbContext dbContext)
