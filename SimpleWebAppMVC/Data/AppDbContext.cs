@@ -13,10 +13,13 @@ namespace SimpleWebAppMVC.Data
          */
         public DbSet<Task> Tasks { get; set; }
 
+        public DbSet<Epic> Epics { get; set; }
+
+        public DbSet<Story> Stories { get; set; }
         /**
          * AppDbContext constructor.
          * @param options Context options
          */
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
     }
 }
